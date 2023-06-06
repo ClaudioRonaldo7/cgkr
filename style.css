@@ -185,9 +185,9 @@ footer {
   padding: 30px;
   height: 300px;/* tamano de diferencia de las zapatillas alto y bajo*/
   text-align: center;
-  margin: 0 20px;
+  margin: 0 10px;
   cursor: pointer;
-  border-radius: 20px;/*tamano y forma de la zapailla*/
+  border-radius: 5px;/*tamano y forma de la zapailla*/
   transition: .3s;
 }
 
@@ -225,8 +225,8 @@ footer {
 
 .cerrar {
   position: absolute;
-  right: 5px;
-  top: 0px;/*tamano de la x(cerrar)*/
+  right: 20px;
+  top: 20px;/*tamano de la x(cerrar)*/
   cursor: pointer;
 }
 
@@ -266,13 +266,13 @@ footer {
 
 .info .fila label {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .info .fila select {
-  width: 80px;/*Tamano(ancho) de la talla*/
+  width: 100px;/*Tamano(ancho) de la talla*/
   font-size: 19px;/*Tamano del numero de la talla*/
-  padding: 0px;/*Tamano(alto) de la talla*/
+  padding: 6px;/*Tamano(alto) de la talla*/
   margin-right: 30px;
 }
 
