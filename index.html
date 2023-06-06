@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXCLUSIVE CGKR STORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logoprin.jpeg" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="oferta.html">Oferta</a></li>
+                <li><a href="lanzamiento.html">Lanzamiento</a></li>
+                <li><a href="integrantes.html">Quienes Somos</a></li>
+                <li><a href="formulario.html">Ingresa</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Buscar">
+                <button type="submit">Buscar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="carousel">
+            <div class="slide">
+                <img src="img/slider1.jpeg" alt="Imagen 1">
+                <h1>DESCUBRE LA NUEVA TEMPORADA</h1>
+            </div>
+            <div class="slide">
+                <img src="img/slider2.jpeg" alt="Imagen 2">
+            </div>
+            <div class="slide">
+                <img src="img/slider3.jpeg" alt="Imagen 3">
+            </div>
+        </div>
+    </main>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/1.jpg" alt="">
+                        <p class="description">Nike Modelo 1</p>
+                        <span class="precio">$ 159.990 </span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/2.jpg" alt="">
+                        <p class="description">Nike Modelo 2</p>
+                        <span class="precio">$ 199.990 </span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/3.jpeg" alt="">
+                        <p class="description">Nike Modelo 3</p>
+                        <span class="precio">$ 149.990 </span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/4.jpg" alt="">
+                        <p class="description">Nike Modelo 4</p>
+                        <span class="precio">$ 119.990 </span>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/5.jpg" alt="">
+                        <p class="description">Nike Modelo 5</p>
+                        <span class="precio">$ 159.990 </span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/6.jpg" alt="">
+                        <p class="description">Nike Modelo 6</p>
+                        <span class="precio">$ 199.990 </span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/7.jpg" alt="">
+                        <p class="description">Nike Modelo 7</p>
+                        <span class="precio">$ 149.990 </span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/8.jpg" alt="">
+                        <p class="description">Nike Modelo 8</p>
+                        <span class="precio">$ 119.990 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contenedor del item seleccionado -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.jpg" alt="" id="img">
+                <h2 id="modelo">Nike Modelo 1</h2>
+                <p id="descripcion">Descripcion Modelo 1 </p>
+                <span class="precio" id="precio">$159.000</span>
+                <div class="fila">
+                    <div class="SIZE">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">35</option>
+                            <option value="">36</option>
+                            <option value="">37</option>
+                            <option value="">38</option>
+                            <option value="">39</option>
+                            <option value="">40</option>
+                            <option value="">41</option>
+                            <option value="">42</option>
+                            <option value="">43</option>
+                            <option value="">44</option>
+                            <option value="">45</option>
+                        </select>
+                    </div>
+                    <button>Agregar Al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </section>    
+
+    <footer>
+        <div class="logo">
+            <a href="index.html"><img src="img/logoprin.jpeg" alt="Logo"></a>
+        </div>
+        <div class="contact-info">
+            <span>Teléfono: +123456789</span>
+            <span>Correo: contacto@cgkr.com</span>
+        </div>
+        <p> Hecho con amor 💚 &copy;2023</p>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,427 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para el header */
+header {
+  background-color: #95cdff;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex: 1 0 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  flex: 1 0 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 10px;
+}
+
+.menu li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.search {
+  flex: 1 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.search input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search button[type="submit"] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Estilos para el main */
+main {
+  padding: 20px 0;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 600px;
+}
+
+.slide h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f15c41;
+  font-size: 24px;
+  text-align: center;
+  
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #95cdff;
+  color: #555;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+}
+
+.contact-info span {
+  display: block;
+}
+
+.footer-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (min-width: 768px) {
+  .logo {
+      flex: 0 0 auto;
+      text-align: left;
+      margin-bottom: 0;
+  }
+
+  .menu {
+      flex: 0 0 auto;
+      justify-content: flex-start;
+  }
+
+  .search {
+      flex: 0 0 auto;
+      margin-top: 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para el contenido */
+.contenido {
+  max-width: 1250px;/*Tamano de categoria de zapatillas*/ 
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mostrador {
+  width: 100%;
+  transition: .5s ease;
+}
+
+.mostrador .fila {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;/*tamano del cuadrado grande al seleccionar */
+}
+
+.mostrador .fila .item {
+  flex-basis: 30%;
+  max-width: 210px;
+  padding: 30px;
+  height: 300px;/* tamano de diferencia de las zapatillas alto y bajo*/
+  text-align: center;
+  margin: 0 20px;
+  cursor: pointer;
+  border-radius: 20px;/*tamano y forma de la zapailla*/
+  transition: .3s;
+}
+
+.mostrador .fila .item:hover {
+  background-color: #ffffff;/*color de cuadrado de las zapatillas*/
+}
+
+.mostrador .fila .item img {
+  width: 100%;/*Tamano de la zapatilla dentro del cuadrado*/
+  margin: 30px 0;
+}
+
+.mostrador .fila .item .descripcion {
+  color: #707070;
+  font-weight: bold;
+}
+
+.mostrador .fila .item .precio {
+  color: #f81515;/*Color de precio*/
+  font-weight: bold;
+  font-size: 22px;/*Tamano del precio*/
+}
+
+.seleccion {
+  transition: .5s ease;
+  opacity: 0;
+  width: 0%;
+  border: 1px solid #cccc;/*Color de la linea al seleccionar*/
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cerrar {
+  position: absolute;
+  right: 5px;
+  top: 0px;/*tamano de la x(cerrar)*/
+  cursor: pointer;
+}
+
+.info {
+  padding: 20px;/*Borde de precio y talla*/
+}
+
+.info img {
+  display: block;
+  margin: 40px;/*lugar donde se posiciona la zapatilla(derecha o izquirda) */
+  width: 85%;/*Tamano de la zapatilla al entrar a la seleccion */
+}
+
+.info h2 {
+  color: #707070;/*Color de letras Modelos*/
+  margin-bottom: 0px;/*separacion de letras "Modelos"*/
+}
+
+.info p {
+  font-size: 15px;/*tamano de (descripcion del modelo)*/
+  color: #707070;/*Color de letras "descripcion del modelo"*/
+  margin-bottom: 0px;/*lugar para colocar el "Agregar al carrito"*/
+}
+
+.info .precio {
+  font-size: 20px;/*tamano del precio*/
+  font-weight: bold;/*estilo de letra*/
+  color: #707070;/*Color de letras "precio"*/
+  margin-bottom: 0px;
+  display: block;
+}
+
+.info .fila {
+  display: flex;
+  align-items: flex-end;
+}
+
+.info .fila label {
+  display: block;
+  margin-bottom: 0px;
+}
+
+.info .fila select {
+  width: 80px;/*Tamano(ancho) de la talla*/
+  font-size: 19px;/*Tamano del numero de la talla*/
+  padding: 0px;/*Tamano(alto) de la talla*/
+  margin-right: 30px;
+}
+
+.info .fila button {
+  height: 30px;/*Tamano de "agregar al carrito"*/
+  border: none;
+  width: 100%;
+  padding: 0px;
+  color: #ffff;
+  background-color: #f81515;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .mostrador .fila .item {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+
+  .info img {
+    margin: 20px;
+  }
+
+  .info .fila select {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+.bodyD{
+  background-image: url('img/e3c1d7cc-8155-4f7a-9afb-141513b80b70.jpg');
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.containerD {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.radio-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #f81515;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #d70e0e;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .containerD {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .containerD {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .containerD {
+    max-width: 250px;
+  }
+}
+.card {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  margin: 20px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #666;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+}
+
