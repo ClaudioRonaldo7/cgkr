@@ -160,9 +160,9 @@ footer {
 
 /* Estilos para el contenido */
 .contenido {
-  max-width: 1250px;/*Tamano de categoria de zapatillas*/ 
+  max-width: 1100px;/*Tamano de categoria de zapatillas*/ 
   width: 100%;
-  margin: 40px auto;
+  margin: 0px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -183,11 +183,11 @@ footer {
   flex-basis: 30%;
   max-width: 210px;
   padding: 30px;
-  height: 300px;/* tamano de diferencia de las zapatillas alto y bajo*/
+  height: 325px;/* tamano de diferencia de las zapatillas alto y bajo*/
   text-align: center;
-  margin: 0 20px;
+  margin: 0 10px;
   cursor: pointer;
-  border-radius: 20px;/*tamano y forma de la zapailla*/
+  border-radius: 5px;/*tamano y forma de la zapailla*/
   transition: .3s;
 }
 
@@ -196,7 +196,7 @@ footer {
 }
 
 .mostrador .fila .item img {
-  width: 100%;/*Tamano de la zapatilla dentro del cuadrado*/
+  width: 95%;/*Tamano de la zapatilla dentro del cuadrado*/
   margin: 30px 0;
 }
 
@@ -225,8 +225,8 @@ footer {
 
 .cerrar {
   position: absolute;
-  right: 5px;
-  top: 0px;/*tamano de la x(cerrar)*/
+  right: 20px;
+  top: 20px;/*tamano de la x(cerrar)*/
   cursor: pointer;
 }
 
@@ -266,13 +266,13 @@ footer {
 
 .info .fila label {
   display: block;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .info .fila select {
-  width: 80px;/*Tamano(ancho) de la talla*/
+  width: 100px;/*Tamano(ancho) de la talla*/
   font-size: 19px;/*Tamano del numero de la talla*/
-  padding: 0px;/*Tamano(alto) de la talla*/
+  padding: 6px;/*Tamano(alto) de la talla*/
   margin-right: 30px;
 }
 
